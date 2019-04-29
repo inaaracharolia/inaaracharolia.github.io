@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url("https://use.typekit.net/ugj0qof.css");
+
+/* FONT STYLE */
+
+html {
+    font-family: avenir next;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    background-color: white;
+    color: black;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	color: #4A4A4A;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	margin: 0px;
+}
+
+h4 {
+	font-size: 18px;
+	font-weight: normal;
+	color: rgb(90, 90, 90);
+	margin: 0px;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #F96C82;
+	margin: 0px;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
+
+p {
+	color: rgb(90, 90, 90);
+}
+
+/* HERO */
+
+.hero-container {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.hero-content {
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+
+.hero-cta .arrow {
+	height: 10px;
+}
+
+.hero-content .hero-image {
+	margin-top: 100px;
+	margin-bottom: 45px;
+	animation-name: float;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes float {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+/*
+.hero-cta .arrow {
+	height: 10px;
+}
+
+.hero-content .hero-image {
+	margin-top: 100px;
+	margin-bottom: 25px;
+	animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+*/
+
+
+
+
+/* FLAVORS */
+
+.flavor-container {
+	background: #F7F7F7;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+}
+
+.flavor-container .flavor-buttons {
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 280px;
+	padding-left: 280px;
+	padding-top: 50px;
+}
+
+.flavor-type {
+	padding-left: 350px;
+	padding-top: 75px;
+}
+
+.flavor-type .flavor-image {
+	float: left;
+	width: 30%;
+}
+
+.flavor-type .flavor-detail {
+	float: left;
+	width: 40%;
+	text-align: left;
+	padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* TOPPINGS */
+
+.toppings-container {
+	text-align: center;
+	padding-bottom: 100px;
+/*	padding-top: 10px;s
+	padding-bottom: 100px; */
+}
+
+.toppings-text{
+	margin-top: 100px;
+}
+
+.toppings-img {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 0px;
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+/*	padding-left: 150px;
+	padding-right: 150px;  */
+	top: 150px;
+	height: 125px;
+}
+
+/* .toppings-captions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 0px;
+/*	padding-right: 10px;
+	padding-left: 10px; 
+	position: relative;
+	top: -300px;
+}
+*/
+
+.toppings-bg {
+	width: 100%;
+}
+
+/* sprinkles */
+
+.toppings-img .sprinkles .sprinkles-caption {
+	visibility: hidden;
+	width: 220px;
+	color:#4A4A4A;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -110px;
+	z-index: 1;
+}
+
+.toppings-img .sprinkles:hover .sprinkles-caption {
+	visibility: visible;
+}
+
+/* cookies */
+
+.toppings-img .cookie .cookie-caption {
+	visibility: hidden;
+	width: 220px;
+	color:#4A4A4A;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -110px;
+	z-index: 1;
+}
+
+.toppings-img .cookie:hover .cookie-caption {
+	visibility: visible;
+}
+
+/* cherries */
+
+.toppings-img .cherries .cherries-caption {
+	visibility: hidden;
+	width: 220px;
+	color:#4A4A4A;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -110px;
+	z-index: 1;
+}
+
+.toppings-img .cherries:hover .cherries-caption {
+	visibility: visible;
+}
+
+
+/* syrup */
+
+.toppings-img .syrup .syrup-caption {
+	visibility: hidden;
+	width: 220px;
+	color:#4A4A4A;
+	text-align: center;
+	padding: 5px 0;
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -110px;
+	z-index: 1;
+}
+
+.toppings-img .syrup:hover .syrup-caption {
+	visibility: visible;
+}
+
+
+
+
+
+/*
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+
+
+
+/*
+
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+
+*/
+
+
+
+
